@@ -1,0 +1,21 @@
+{
+    "name": "topfloor/cds_integration_wordpress",
+    "description": "WordPress module implementing the TopFloor CDS API",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Ben McClure",
+            "email": "bmcclure@topfloortech.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://bitbucket.org/topfloor/cds_api"
+        }
+    ],
+    "require": {
+        "topfloor/cds_api": "dev-master"
+    }
+}

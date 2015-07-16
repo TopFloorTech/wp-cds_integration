@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ea596a4b979031bd4b237173606ca057",
+    "packages": [
+        {
+            "name": "topfloor/cds_api",
+            "version": "dev-master",
+            "source": {
+                "type": "hg",
+                "url": "https://bitbucket.org/topfloor/cds_api",
+                "reference": "5c903c570b1281288ef73a1e9f8f0e0841224668"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/topfloor/cds_api/get/5c903c570b1281288ef73a1e9f8f0e0841224668.zip",
+                "reference": "5c903c570b1281288ef73a1e9f8f0e0841224668",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TopFloor\\Cds\\": "src"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Ben McClure",
+                    "email": "bmcclure@topfloortech.com"
+                }
+            ],
+            "description": "A PHP 5.4+ library for interfacing with Catalog Data Solutions",
+            "time": "2015-07-16 22:53:25"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "topfloor/cds_api": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
