@@ -2,11 +2,10 @@
 /*
 Plugin Name: CDS Integration
 Plugin URI: http://topfloortech.com/
-Description: Allows you to show CDS (Catalog Data Solutions) Widgets and content on a WordPress site.
-Version: 1.0
-Author: Ben
+Description: Integrate Catalog Data Solutions with WordPress.
+Version: 1.0.0
+Author: Ben McClure
 Author URI: http://www.topfloortech.com/
-License: GPL2
 */
 
 // Include core CDS library and class overrides
