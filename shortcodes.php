@@ -7,9 +7,21 @@
  */
 
 function cds_integration_search_sidebar() {
-    return CdsIntegration::service()->getOutputHelper()->searchSidebarContainer();
+    $service = CdsIntegration::service();
+
+    if ($service === false) {
+        return '';
+    }
+
+    return $service->getOutputHelper()->searchSidebarContainer();
 }
 
 function cds_integration_search_main() {
-    return CdsIntegration::service()->getOutputHelper()->searchMainContainer();
+    $service = CdsIntegration::service();
+
+    if ($service === false) {
+        return '';
+    }
+
+    return $service->getOutputHelper()->searchMainContainer();
 }

@@ -18,6 +18,10 @@ class CdsIntegration {
         if (!isset(self::$service)) {
             $settings = get_option('cds_integration_settings', array('host' => 'www.product-config.net', 'domain' => ''));
 
+            if (!empty($settings['host']) || empty($settings['domain'])) {
+                return false;
+            }
+
             self::$service = new CdsService($settings['host'], $settings['domain']);
         }
 
@@ -26,6 +30,11 @@ class CdsIntegration {
 
     public static function initialize() {
         $service = self::service();
+
+        if ($service === false) {
+            return;
+        }
+
         $service->setUrlHandler(new WordPressCdsUrlHandler(self::$service));
 
         // TODO: Add commands to service based on current request
