@@ -15,9 +15,9 @@ require_once 'lib/CdsIntegration.php';
 require_once 'lib/UrlHandlers/WordPressCdsUrlHandler.php';
 
 // Include WordPress API functions
-require_once 'options.php';
-require_once 'widgets.php';
-require_once 'shortcodes.php';
+require_once 'includes/options.php';
+require_once 'includes/widgets.php';
+require_once 'includes/shortcodes.php';
 
 // Include widget classes
 include_once 'lib/Widgets/CdsSearchSidebarWidget.php';
