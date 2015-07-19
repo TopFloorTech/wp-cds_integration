@@ -19,7 +19,7 @@ function cds_integration_options_page() {
 	<div>
 		<h2>CDS Integration settings</h2>
 
-		<p>Enter the information provided by CDS in the fields below.</p>
+		<p>Use this page to configure the CDS Integration plugin.</p>
 
 		<form action="options.php" method="post">
 			<?php settings_fields('cds_integration_settings'); ?>
