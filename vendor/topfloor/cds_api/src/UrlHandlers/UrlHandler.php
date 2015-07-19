@@ -6,8 +6,7 @@
  * Time: 3:51 PM
  */
 
-namespace Cds\UrlHandlers;
-
+namespace TopFloor\Cds\UrlHandlers;
 
 use TopFloor\Cds\CdsService;
 

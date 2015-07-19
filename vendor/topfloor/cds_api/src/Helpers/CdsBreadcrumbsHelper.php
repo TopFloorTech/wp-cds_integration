@@ -6,8 +6,7 @@
  * Time: 11:38 PM
  */
 
-namespace Cds\Helpers;
-
+namespace TopFloor\Cds\Helpers;
 
 use TopFloor\Cds\CdsService;
 

@@ -6,10 +6,7 @@
  * Time: 4:40 PM
  */
 
-namespace Cds;
-
-
-use Cds\CdsCommands\CdsCommand;
+namespace TopFloor\Cds;
 
 class CdsDependencyCollection {
 	private $dependencies = array(

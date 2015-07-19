@@ -6,7 +6,7 @@
  * Time: 3:55 PM
  */
 
-namespace Cds\CdsCommands;
+namespace TopFloor\Cds\CdsCommands;
 
 
 interface CdsCommandInterface {

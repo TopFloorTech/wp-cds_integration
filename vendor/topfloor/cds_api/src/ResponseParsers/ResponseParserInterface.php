@@ -8,7 +8,6 @@
 
 namespace TopFloor\Cds\ResponseParsers;
 
-
 interface ResponseParserInterface {
 	public function parse($response, $containsHeaders = true);
 }

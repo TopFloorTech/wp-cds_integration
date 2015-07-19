@@ -6,10 +6,10 @@
  * Time: 4:40 PM
  */
 
-namespace Cds;
+namespace TopFloor\Cds;
 
 
-use Cds\CdsCommands\CdsCommand;
+use TopFloor\Cds\CdsCommands\CdsCommand;
 
 class CdsCommandCollection {
 	private $commands = array();

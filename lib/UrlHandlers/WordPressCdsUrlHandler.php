@@ -1,5 +1,5 @@
 <?php
-use Cds\UrlHandlers\UrlHandler;
+use TopFloor\Cds\UrlHandlers\UrlHandler;
 
 /**
  * Created by PhpStorm.

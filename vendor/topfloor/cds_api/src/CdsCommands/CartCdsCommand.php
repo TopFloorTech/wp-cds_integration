@@ -6,7 +6,7 @@
  * Time: 3:58 PM
  */
 
-namespace Cds\CdsCommands;
+namespace TopFloor\Cds\CdsCommands;
 
 class CartCdsCommand extends CdsCommand {
 	public function initialize() {

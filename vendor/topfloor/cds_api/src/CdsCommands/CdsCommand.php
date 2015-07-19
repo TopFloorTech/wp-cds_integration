@@ -6,9 +6,9 @@
  * Time: 3:56 PM
  */
 
-namespace Cds\CdsCommands;
+namespace TopFloor\Cds\CdsCommands;
 
-use Cds\CdsDependencyCollection;
+use TopFloor\Cds\CdsDependencyCollection;
 use TopFloor\Cds\CdsService;
 
 abstract class CdsCommand implements CdsCommandInterface {

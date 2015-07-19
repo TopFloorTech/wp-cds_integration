@@ -8,8 +8,7 @@
  * <!--suppress HtmlUnknownTarget -->
  */
 
-namespace Cds\Helpers;
-
+namespace TopFloor\Cds\Helpers;
 
 use TopFloor\Cds\CdsService;
 

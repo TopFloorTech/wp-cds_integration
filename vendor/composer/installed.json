@@ -6,15 +6,15 @@
         "source": {
             "type": "hg",
             "url": "https://bitbucket.org/topfloor/cds_api",
-            "reference": "5c903c570b1281288ef73a1e9f8f0e0841224668"
+            "reference": "66dab5825bf0c2dcf20681c1d605a6afe44283c1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://bitbucket.org/topfloor/cds_api/get/5c903c570b1281288ef73a1e9f8f0e0841224668.zip",
-            "reference": "5c903c570b1281288ef73a1e9f8f0e0841224668",
+            "url": "https://bitbucket.org/topfloor/cds_api/get/66dab5825bf0c2dcf20681c1d605a6afe44283c1.zip",
+            "reference": "66dab5825bf0c2dcf20681c1d605a6afe44283c1",
             "shasum": ""
         },
-        "time": "2015-07-16 22:53:25",
+        "time": "2015-07-17 23:54:35",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

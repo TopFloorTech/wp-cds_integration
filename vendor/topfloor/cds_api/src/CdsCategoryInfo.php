@@ -6,7 +6,7 @@
  * Time: 11:55 PM
  */
 
-namespace Cds;
+namespace TopFloor\Cds;
 
 
 use TopFloor\Cds\CdsService;

@@ -6,8 +6,7 @@
  * Time: 3:50 PM
  */
 
-namespace Cds\UrlHandlers;
-
+namespace TopFloor\Cds\UrlHandlers;
 
 interface UrlHandlerInterface {
 	public function construct($parameters = array());

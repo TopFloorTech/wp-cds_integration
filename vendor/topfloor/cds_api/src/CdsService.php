@@ -6,15 +6,12 @@
  * Time: 10:14 AM
  */
 
-Namespace TopFloor\Cds;
+namespace TopFloor\Cds;
 
-use Cds\CdsCategoryInfo;
-use Cds\CdsCommandCollection;
-use Cds\CdsCommands\CdsCommand;
-use Cds\CdsDependencyCollection;
-use Cds\Helpers\CdsBreadcrumbsHelper;
-use Cds\Helpers\CdsOutputHelper;
-use Cds\UrlHandlers\DefaultUrlHandler;
+use TopFloor\Cds\CdsCommands\CdsCommand;
+use TopFloor\Cds\Helpers\CdsBreadcrumbsHelper;
+use TopFloor\Cds\Helpers\CdsOutputHelper;
+use TopFloor\Cds\UrlHandlers\DefaultUrlHandler;
 use TopFloor\Cds\RequestHandlers\CurlRequestHandler;
 use TopFloor\Cds\RequestHandlers\FsockopenRequestHandler;
 use TopFloor\Cds\RequestHandlers\RequestHandler;

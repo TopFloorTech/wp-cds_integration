@@ -8,7 +8,6 @@
 
 namespace TopFloor\Cds\RequestHandlers;
 
-
 use TopFloor\Cds\CdsRequest;
 
 interface RequestHandlerInterface {

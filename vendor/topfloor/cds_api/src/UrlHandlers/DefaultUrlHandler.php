@@ -6,8 +6,7 @@
  * Time: 4:57 PM
  */
 
-namespace Cds\UrlHandlers;
-
+namespace TopFloor\Cds\UrlHandlers;
 
 class DefaultUrlHandler extends UrlHandler {
 
