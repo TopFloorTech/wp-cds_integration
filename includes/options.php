@@ -24,7 +24,7 @@ function cds_integration_options_page() {
 		<form action="options.php" method="post">
 			<?php settings_fields('cds_integration_settings'); ?>
 
-			<?php do_settings_sections('cds_integration_main'); ?>
+			<?php do_settings_sections('cds-integration'); ?>
 
 			<input name="Submit" type="submit" value="<?php esc_attr_e('Save Changes'); ?>">
 		</form>
