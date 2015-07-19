@@ -27,4 +27,16 @@ class CdsSearchSidebarWidget extends WP_Widget {
     public function widget( $args, $instance ) {
         echo cds_integration_search_sidebar();
     }
+
+    // Widget Backend
+    public function form( $instance ) {
+
+    }
+
+    // Updating widget replacing old instances with new
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        return $instance;
+    }
 }

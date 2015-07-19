@@ -13,13 +13,13 @@ require_once 'vendor/autoload.php';
 require_once 'lib/CdsIntegration.php';
 require_once 'lib/UrlHandlers/WordPressCdsUrlHandler.php';
 
+// Include widget classes
+include_once 'lib/Widgets/CdsSearchSidebarWidget.php';
+
 // Include WordPress API functions
 require_once 'includes/options.php';
 require_once 'includes/widgets.php';
 require_once 'includes/shortcodes.php';
-
-// Include widget classes
-include_once 'lib/Widgets/CdsSearchSidebarWidget.php';
 
 CdsIntegration::initialize();
 
