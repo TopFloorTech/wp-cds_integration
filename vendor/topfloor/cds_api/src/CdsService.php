@@ -9,6 +9,7 @@
 namespace TopFloor\Cds;
 
 use TopFloor\Cds\CdsCommands\CdsCommand;
+use TopFloor\Cds\Exceptions\CdsServiceException;
 use TopFloor\Cds\Helpers\CdsBreadcrumbsHelper;
 use TopFloor\Cds\Helpers\CdsOutputHelper;
 use TopFloor\Cds\UrlHandlers\DefaultUrlHandler;
@@ -29,6 +30,13 @@ class CdsService {
 	private $breadcrumbs;
 	private $dependencies;
 	private $categoryInfo;
+	private $availableCommands = array(
+		'cart' => 'TopFloor\Cds\CdsCommands\CartCdsCommand',
+		'compare' => 'TopFloor\Cds\CdsCommands\CompareCdsCommand',
+		'keys' => 'TopFloor\Cds\CdsCommands\KeysCdsCommand',
+		'products' => 'TopFloor\Cds\CdsCommands\ProductsCdsCommand',
+		'search' => 'TopFloor\Cds\CdsCommands\SearchCdsCommand',
+	);
 
 	public function __construct($host, $domain) {
 		$this->host = $host;
@@ -57,6 +65,14 @@ class CdsService {
 		} else {
 			$this->requestHandler = new FsockopenRequestHandler($this);
 		}
+	}
+
+	public function getAvailableCommands() {
+		return $this->availableCommands;
+	}
+
+	public function addAvailableCommand($slug, $class) {
+		$this->availableCommands[$slug] = $class;
 	}
 
     public function baseUrl() {
@@ -169,6 +185,19 @@ class CdsService {
 		$dependencies->addDependencies($this->commands->getDependencies());
 
 		return $dependencies;
+	}
+
+	public function createCommand($slug) {
+		$availableCommands = $this->getAvailableCommands();
+
+		if (empty($availableCommands[$slug]) || !class_exists($availableCommands[$slug])) {
+			throw new CdsServiceException('Requested command slug "' . $slug . '" is not available.');
+		}
+
+		/** @var CdsCommand $command */
+		$command = new $availableCommands[$slug]($this);
+
+		return $command;
 	}
 
 	public function command(CdsCommand $command) {

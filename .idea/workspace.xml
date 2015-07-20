@@ -2,18 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="223e4be9-79de-480f-a551-bcc36f2920a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/EnvironmentBasedUrlHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/PrettyUrlHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/CdsIntegration.php" afterPath="$PROJECT_DIR$/lib/CdsIntegration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Widgets/CdsSearchSidebarWidget.php" afterPath="$PROJECT_DIR$/lib/Widgets/CdsSearchSidebarWidget.php" />
+      <change type="DELETED" beforePath="D:\Development\PhpstormProjects\WordPress Plugins\cds_integration\includes\shortcodes.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\PhpstormProjects\WordPress Plugins\cds_integration\includes\widgets.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CartCdsCommand.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CartCdsCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/Helpers/CdsBreadcrumbsHelper.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/Helpers/CdsBreadcrumbsHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCategoryInfo.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCategoryInfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CdsCommand.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CdsCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommandCollection.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommandCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CdsCommandInterface.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CdsCommandInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsDependencyCollection.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsDependencyCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/Helpers/CdsOutputHelper.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/Helpers/CdsOutputHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsRequest.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsService.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/Exceptions/CdsServiceException.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/Exceptions/CdsServiceException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CompareCdsCommand.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CompareCdsCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/CurlRequestHandler.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/CurlRequestHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/DefaultUrlHandler.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/DefaultUrlHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/EnvironmentBasedUrlHandler.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/EnvironmentBasedUrlHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/FsockopenRequestHandler.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/FsockopenRequestHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/ResponseParsers/JsonResponseParser.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/ResponseParsers/JsonResponseParser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/KeysCdsCommand.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/KeysCdsCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/PrettyUrlHandler.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/PrettyUrlHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/ProductsCdsCommand.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/ProductsCdsCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/RequestHandler.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/RequestHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/RequestHandlerInterface.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/RequestHandlerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/ResponseParsers/ResponseParser.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/ResponseParsers/ResponseParser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/ResponseParsers/ResponseParserInterface.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/ResponseParsers/ResponseParserInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/SearchCdsCommand.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/SearchCdsCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/SocketCreateRequestHandler.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/RequestHandlers/SocketCreateRequestHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/UrlHandler.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/UrlHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/UrlHandlerInterface.php" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/src/UrlHandlers/UrlHandlerInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/UrlHandlers/WordPressCdsUrlHandler.php" afterPath="$PROJECT_DIR$/lib/UrlHandlers/WordPressCdsUrlHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cds-integration.php" afterPath="$PROJECT_DIR$/cds-integration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/topfloor/cds_api/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/vendor/topfloor/cds_api/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/options.php" afterPath="$PROJECT_DIR$/includes/options.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cds_integration.iws" />
@@ -40,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="widgets.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/widgets.php">
+      <file leaf-file-name="CdsCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CdsCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17910448">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -176,7 +194,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -190,11 +208,85 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Widgets" />
+              <option name="myItemId" value="topfloor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topfloor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topfloor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CdsCommands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cds_integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -210,6 +302,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development\PhpstormProjects\WordPress Plugins\cds_integration\vendor\topfloor\cds_api\src" />
       <recent name="D:\Development\PhpstormProjects\WordPress Plugins\cds_integration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -313,7 +406,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437343444096</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Updates to library and this plugin based on testing">
+      <created>1437364129982</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1437364129982</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -362,7 +461,8 @@
     <MESSAGE value="Update setting section name" />
     <MESSAGE value="Update form code" />
     <MESSAGE value="Widget changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Widget changes" />
+    <MESSAGE value="Updates to library and this plugin based on testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to library and this plugin based on testing" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>D:\Development\PhpstormProjects\WordPress Development</wordpressPath>
@@ -396,10 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/widgets.php">
+    <entry file="file://$PROJECT_DIR$/vendor/topfloor/cds_api/src/CdsCommands/CdsCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17910448">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
