@@ -174,15 +174,15 @@ class CdsService {
 
 		$output = "window.TopFloor = window.TopFloor || {};\n";
 		$output .= "TopFloor.Cds = TopFloor.Cds || {};\n";
-		$output .= "TopFloor.Cds.Settings = '" . json_encode($settings) . "';";
+		$output .= "TopFloor.Cds.Settings = " . json_encode($settings) . ";";
 
 		return $output;
 	}
 
 	public function getDependencies() {
 		$dependencies = new CdsDependencyCollection();
-		$dependencies->addDependencies($this->dependencies);
-		$dependencies->addDependencies($this->commands->getDependencies());
+		$dependencies->addDependencies($this->dependencies->getDependencies());
+		$dependencies->addDependencies($this->commands->getDependencies()->getDependencies());
 
 		return $dependencies;
 	}

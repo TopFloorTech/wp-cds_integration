@@ -66,7 +66,7 @@ function cds_integration_settings_validate($input) {
 
 	$newinput['cds_environments'] = $environments;
 
-	// TODO: Validate the data in $newinput to make sure it looks like a hostname and doesn't have a protocol
+	// TODO: Validate $newinput['host'] to make sure it looks like a hostname and strip any protocol
 
 	return $newinput;
 }

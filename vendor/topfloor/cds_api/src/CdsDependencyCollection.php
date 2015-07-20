@@ -61,11 +61,25 @@ class CdsDependencyCollection {
 		return $this->getDependencies('settings');
 	}
 
-	public function setting($key, $value) {
-		$this->setDependency('setting', $key, $value);
+	public function setting($key, $value = null) {
+		if (is_null($value)) {
+			if (isset($this->dependencies['settings'][$key])) {
+				return $this->dependencies['settings'][$key];
+			} else {
+				return null;
+			}
+		}
+
+		$this->setDependency('settings', $key, $value);
+		return $value;
 	}
 
 	public function addDependencies($dependencies) {
+		if (is_a($dependencies, 'CdsDependencyCollection')) {
+			/** @var CdsDependencyCollection $dependencies */
+			$dependencies = $dependencies->getDependencies();
+		}
+
 		foreach ($dependencies as $type => $typeDependencies) {
 			foreach ($typeDependencies as $key => $value) {
 				$this->setDependency($type, $key, $value);

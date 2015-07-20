@@ -54,7 +54,7 @@ class SearchCdsCommand extends CdsCommand {
 	}
 
 	public function execute() {
-		$parameters = $this->getParameters();
+		$parameters = $this->getParameters(true);
 
 		$output = '';
 

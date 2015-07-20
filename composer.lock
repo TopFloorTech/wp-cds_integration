@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea596a4b979031bd4b237173606ca057",
+    "hash": "5faeab1a0eb7ee321c7b27e5f2394947",
     "packages": [
         {
             "name": "topfloor/cds_api",

@@ -10,19 +10,19 @@ use TopFloor\Cds\CdsService;
 
 class CdsIntegration {
     /** @var CdsService $service */
-    private static $service;
+    private static $service = false;
 
     private static $jsBlocks = array();
 
     public static function service() {
-        if (!isset(self::$service)) {
-            $settings = get_option('cds_integration_settings', array('host' => 'www.product-config.net', 'domain' => ''));
+        if (self::$service === false) {
+            $settings = get_option('cds_integration_settings', array('cds_host' => 'www.product-config.net', 'cds_domain' => ''));
 
-            if (!empty($settings['host']) || empty($settings['domain'])) {
+            if (empty($settings['cds_host']) || empty($settings['cds_domain'])) {
                 return false;
             }
 
-            self::$service = new CdsService($settings['host'], $settings['domain']);
+            self::$service = new CdsService($settings['cds_host'], $settings['cds_domain']);
         }
 
         return self::$service;
@@ -35,11 +35,18 @@ class CdsIntegration {
             return;
         }
 
-        $urlHandler = new WordPressCdsUrlHandler(self::$service);
+        $urlHandler = new WordPressCdsUrlHandler($service);
 
         $service->setUrlHandler($urlHandler);
 
         $page = $urlHandler->getPageFromUri($urlHandler->getCurrentUri());
+
+        $availableCommands = $service->getAvailableCommands();
+
+        if (!empty($availableCommands[$page])) {
+            $command = $service->createCommand($page);
+            $service->command($command);
+        }
 
         // TODO: Add commands to service based on current request
 

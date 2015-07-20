@@ -16,6 +16,6 @@ class WordPressCdsUrlHandler extends EnvironmentBasedUrlHandler
             $options['cds_environments'] = array();
         }
 
-        return $options['environments'];
+        return $options['cds_environments'];
     }
 }

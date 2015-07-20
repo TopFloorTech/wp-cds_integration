@@ -42,7 +42,7 @@ abstract class EnvironmentBasedUrlHandler extends PrettyUrlHandler
                 break;
             }
 
-            if (preg_match('^' . $envBasePath . '/', $url) !== false) {
+            if (preg_match('|^' . $envBasePath . '/|', $url) !== false) {
                 $basePath = $envBasePath;
 
                 break;
@@ -129,7 +129,7 @@ abstract class EnvironmentBasedUrlHandler extends PrettyUrlHandler
             return true;
         }
 
-        return (preg_match('^/' . $basePath . '/', $requestUri) !== false);
+        return (preg_match('|^/' . $basePath . '/|', $requestUri) !== false);
     }
 
     protected function getCurrentEnvironment()
