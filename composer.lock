@@ -12,12 +12,12 @@
             "source": {
                 "type": "hg",
                 "url": "https://bitbucket.org/topfloor/cds_api",
-                "reference": "66dab5825bf0c2dcf20681c1d605a6afe44283c1"
+                "reference": "d0395d53e4ad7ef2558e7353f60521985d6f6369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/topfloor/cds_api/get/66dab5825bf0c2dcf20681c1d605a6afe44283c1.zip",
-                "reference": "66dab5825bf0c2dcf20681c1d605a6afe44283c1",
+                "url": "https://bitbucket.org/topfloor/cds_api/get/d0395d53e4ad7ef2558e7353f60521985d6f6369.zip",
+                "reference": "d0395d53e4ad7ef2558e7353f60521985d6f6369",
                 "shasum": ""
             },
             "type": "library",
@@ -36,7 +36,7 @@
                 }
             ],
             "description": "A PHP 5.4+ library for interfacing with Catalog Data Solutions",
-            "time": "2015-07-17 23:54:35"
+            "time": "2015-07-20 05:47:08"
         }
     ],
     "packages-dev": [],

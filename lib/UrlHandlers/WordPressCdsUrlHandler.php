@@ -7,15 +7,15 @@ use TopFloor\Cds\UrlHandlers\UrlHandler;
  * Date: 7/16/2015
  * Time: 1:44 PM
  */
-class WordPressCdsUrlHandler extends UrlHandler {
+class WordPressCdsUrlHandler extends EnvironmentBasedUrlHandler
+{
+    protected function getEnvironments() {
+        $options = get_option('cds_integration_settings');
 
-    public function construct($parameters = array())
-    {
-        // TODO: Implement construct() method.
-    }
+        if (!isset($options['cds_environments'])) {
+            $options['cds_environments'] = array();
+        }
 
-    public function deconstruct($url)
-    {
-        // TODO: Implement deconstruct() method.
+        return $options['environments'];
     }
 }

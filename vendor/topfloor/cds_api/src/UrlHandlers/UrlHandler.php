@@ -21,6 +21,10 @@ abstract class UrlHandler implements UrlHandlerInterface {
 
 	public abstract function deconstruct($url);
 
+	public abstract function getPageFromUri($uri = null, $basePath = null);
+
+	public abstract function getUriForPage($page, $basePath = null);
+
 	public function getCurrentUri() {
 		return $_SERVER['REQUEST_URI'];
 	}
@@ -39,5 +43,21 @@ abstract class UrlHandler implements UrlHandlerInterface {
 		$parts = $this->deconstruct($this->getCurrentUri());
 
 		return isset($parts[$parameter]);
+	}
+
+	protected function buildParameters($parameters = array()) {
+		$defaultParameters = array(
+			'page' => 'search',
+			'id' => '',
+			'cid' => '',
+		);
+
+		if (empty(trim($parameters['page']))) {
+			unset($parameters['page']);
+		}
+
+		$parameters += $defaultParameters;
+
+		return $parameters;
 	}
 }

@@ -35,7 +35,11 @@ class CdsIntegration {
             return;
         }
 
-        $service->setUrlHandler(new WordPressCdsUrlHandler(self::$service));
+        $urlHandler = new WordPressCdsUrlHandler(self::$service);
+
+        $service->setUrlHandler($urlHandler);
+
+
 
         // TODO: Add commands to service based on current request
 

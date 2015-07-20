@@ -14,7 +14,10 @@ class CdsSearchSidebarWidget extends WP_Widget {
         parent::__construct(
             'cds_search_sidebar_widget',
             __('CDS Search Sidebar', 'cds_integration'),
-            array('description' => __('Shows the CDS faceted search sidebar', 'cds_integration'))
+            array(
+                'description' => __('Shows the CDS faceted search sidebar', 'cds_integration'),
+                'classname' => 'CdsSearchSidebarWidget',
+            )
         );
     }
 
@@ -35,8 +38,6 @@ class CdsSearchSidebarWidget extends WP_Widget {
 
     // Updating widget replacing old instances with new
     public function update( $new_instance, $old_instance ) {
-        $instance = array();
-        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-        return $instance;
+        return $new_instance;
     }
 }

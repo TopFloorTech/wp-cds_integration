@@ -17,5 +17,9 @@ interface UrlHandlerInterface {
 
 	public function getCurrentUri();
 
+	public function getPageFromUri($uri = null, $basePath = null);
+
+	public function getUriForPage($page, $basePath = null);
+
 	public function parameterIsSet($parameter);
 }
