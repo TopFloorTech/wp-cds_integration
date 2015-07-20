@@ -39,7 +39,7 @@ class CdsIntegration {
 
         $service->setUrlHandler($urlHandler);
 
-
+        $page = $urlHandler->getPageFromUri($urlHandler->getCurrentUri());
 
         // TODO: Add commands to service based on current request
 
