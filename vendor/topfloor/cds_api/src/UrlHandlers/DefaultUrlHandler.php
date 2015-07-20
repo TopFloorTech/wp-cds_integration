@@ -9,6 +9,7 @@
 namespace TopFloor\Cds\UrlHandlers;
 
 class DefaultUrlHandler extends UrlHandler {
+	protected $defaultPage = 'search';
 
 	public function construct($parameters = array()) {
 		$url = '';
@@ -26,5 +27,15 @@ class DefaultUrlHandler extends UrlHandler {
 		parse_str($url, $parameters);
 
 		return $parameters;
+	}
+
+	public function getPageFromUri($uri = null, $basePath = null)
+	{
+		// TODO: Implement getPageFromUri() method.
+	}
+
+	public function getUriForPage($page, $basePath = null)
+	{
+		// TODO: Implement getUriForPage() method.
 	}
 }
