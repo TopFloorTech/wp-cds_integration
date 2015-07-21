@@ -8,6 +8,10 @@ encode in the following order:
   4. HTML inner text should be encoded with htmlspecialchars() if coming from page URL
 HTML inner text should not be encoded if coming from database
 */
+// host should normally be www.product-config.net, do NOT prefix with http://
+$host = 'www.product-config.net';
+// domain is your specific company identifier within the CDS application
+$domain = 'gilman';
 
 class CDSWebService {
     private $host;
