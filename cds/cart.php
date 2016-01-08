@@ -1,13 +1,20 @@
-            <script>
-                cds.setDomain(<?php echo json_encode($domain) ?>);
-                cds.setRemoteServerBaseURL(<?php echo json_encode("http://$host/catalog3") ?>);
-            </script>
-            <div id="cds-content" class="cds-content">
-                <h1>RFQ Cart</h1>
-                <div>Click <a href="?page=search">here</a> to continue product selection</div>
-                <div id="cds-cart-container"></div>
-                <script>
-                    cds.cart.setParentElementId("cds-cart-container");
-                    cds.cart.load();
-                </script>
-            </div>
+<?php
+/**
+ * CDS Catalog cart page
+ *
+ * Copyright Catalog Data Solutions, Inc.  All Rights Reserved.
+ */
+function cds_getCartHTML($cds) {
+    $html = "        <div id='cds-content' class='cds-content'>\n".
+            "            <h1>RFQ Cart</h1>\n".
+            "            <div>Click <a href='".$cds->getCatalogURL("?page=search")."'>here</a> to continue product selection</div>\n".
+            "            <div id='cds-cart-container'></div>\n".
+            "            <script>\n".
+            "                cds.cart.setParentElementId('cds-cart-container');\n".
+            "                cds.cart.load();\n".
+            "            </script>\n".
+            "        </div>\n".
+            "\n";
+    return $html;
+}
+?>

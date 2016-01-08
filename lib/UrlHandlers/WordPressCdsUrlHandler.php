@@ -9,13 +9,41 @@ use TopFloor\Cds\UrlHandlers\EnvironmentBasedUrlHandler;
  */
 class WordPressCdsUrlHandler extends EnvironmentBasedUrlHandler
 {
-    protected function getEnvironments() {
-        $options = get_option('cds_integration_settings');
+    protected function initialize() {
+        //add_rewrite_tag('%cds_uri%', '([^?&]+)');
+        //add_rewrite_tag('%cds_filter%', '([^?&]+)');
 
-        if (!isset($options['cds_environments'])) {
-            $options['cds_environments'] = array();
+        foreach (CdsIntegration::environments() as $basePath => $categoryId) {
+            $destination = 'index.php?pagename=' . $basePath . '&cds_uri=$matches[1]';
+
+            $regex = '^(' . $basePath . '(\/[^\?]+)?)(\/?\?{0}|\/?\?{1}.*)$';
+
+            add_rewrite_rule($regex, $destination, 'top');
+        }
+    }
+
+    public function buildParameters($parameters = array()) {
+        if (isset($_REQUEST['filter'])) {
+            $parameters['filter'] = $_REQUEST['filter'];
         }
 
-        return $options['cds_environments'];
+        return parent::buildParameters($parameters);
+    }
+
+    /**
+     * @return mixed
+     */
+    protected function getEnvironments() {
+        return CdsIntegration::environments();
+    }
+
+    public function getCurrentUri() {
+        global $wp_query;
+
+        if (isset($wp_query->query_vars['cds_uri'])) {
+            return $wp_query->query_vars['cds_uri'];
+        }
+
+        return parent::getCurrentUri();
     }
 }

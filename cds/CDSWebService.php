@@ -1,19 +1,14 @@
 <?php
-/*
-do all encoding inline, do not pre-encode anything
-encode in the following order:
-  1. encode url query string items with urlencode()
-  2. encode all javascript/json variables with json_encode()
-  3. encode all HTML attributes with htmlspecialchars()
-  4. HTML inner text should be encoded with htmlspecialchars() if coming from page URL
-HTML inner text should not be encoded if coming from database
-*/
-// host should normally be www.product-config.net, do NOT prefix with http://
-$host = 'www.product-config.net';
-// domain is your specific company identifier within the CDS application
-$domain = 'gilman';
-
+/**
+ * CDS catalog web service interface
+ *
+ * Copyright Catalog Data Solutions, Inc.  All Rights Reserved.
+ *
+ * Encapsulates all integration with the CDS catalog web services API
+ */
 class CDSWebService {
+    const VERSION = '2.0.1';
+
     private $host;
     private $unitSystem;
 
@@ -24,7 +19,7 @@ class CDSWebService {
     private $sock_library = 'fsockopen';
     // private $sock_library = 'curl';
 
-    public function __construct($host, $unitSystem = 'english') {
+    public function __construct($host = 'www.product-config.net', $unitSystem = 'english') {
         $this->host = $host;
         $this->unitSystem = $unitSystem;
     }
@@ -121,7 +116,7 @@ class CDSWebService {
     }
 
     public function sendRequestCurl($resource) {
-        $ch = curl_init("http://$this->host$resource");
+        $ch = curl_init("//$this->host$resource");
         if (!$ch) {
             return array('error' => 'Could not connect to the catalog server');
         }
@@ -186,4 +181,35 @@ class CDSWebService {
 
         return $category_info;
     }
+
+    // based on implementation by Joni Salonen
+    // at: http://jonisalonen.com/2012/converting-decimal-numbers-to-ratios
+    public static function toFraction($n, $tolerance = 1.e-6) {
+        $w = 0;
+        $f = $n;
+        if ($n > 1.0) {
+            $w = floor($n);
+            $f = $n - $w;
+        }
+        if ($f == 0) {
+            return "$w";
+        }
+
+        $h1=1; $h2=0;
+        $k1=0; $k2=1;
+        $b = 1/$f;
+        do {
+            $b = 1/$b;
+            $a = floor($b);
+            $aux = $h1; $h1 = $a*$h1+$h2; $h2 = $aux;
+            $aux = $k1; $k1 = $a*$k1+$k2; $k2 = $aux;
+            $b = $b-$a;
+        } while (abs($f-$h1/$k1) > $f*$tolerance);
+
+        if ($w != 0) {
+            return "$w $h1/$k1";
+        }
+        return "$h1/$k1";
+    }
 }
+?>

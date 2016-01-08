@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>CDS Catalog Example</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="http://www.product-config.net/catalog3/js/cds-catalog-min.js"></script>
-    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/smoothness/jquery-ui.min.css" type="text/css" rel="stylesheet" />
-    <link href="http://www.product-config.net/catalog3/css/reset.css" rel="stylesheet">
-    <link href="http://www.product-config.net/catalog3/css/catalog-3.1.css" rel="stylesheet" />
-    <link href="default.css" rel="stylesheet">
+    <title>Catalog Error</title>
+    <link href="//www.product-config.net/catalog3/css/reset.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff;
+            font: 13px/1.231 arial,helvetica,clean,sans-serif;
+            padding: 4em;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 1.846em;
+            font-weight: bold;
+            padding-bottom: 0.542em;
+        }
+
+        p {
+            font-size: 1.154em;
+        }
+    </style>
 </head>
 <body>
-    <div id="nav"></div>
-
-    <div id="doc">
-        <div id="header">
-            <img src="http://www.product-config.net/catalog3/images/go-cds-logo.jpg">
-            <div class="search-container float-right">
-                <input type="text" onfocus="if (this.value === 'Search') { this.value = ''; } else { select(); }"
-                        onblur="if (this.value === '') { this.value = 'Search'; }" value="Search"
-                        id="cds-keys-input" class="search-box">
-                <button id="cds-keys-button" class="search-button"></button>
-                <script>
-                    cds.keys.inputElementId = "cds-keys-input";
-                    cds.keys.buttonElementId = "cds-keys-button";
-                    cds.keys.resultsURLTemplate = "index.php?page=keys";
-                    cds.keys.loadInput();
-                </script>
-            </div>
-        </div> <!-- header -->
-            <div id="cds-content" class="cds-content">
-                <div style="padding: 2em 1em">
-                    <h1 style="margin: 1em 0;">An error has occured with your request</h1>
-                    <p style="font-size: 1.154em;">
-                        We suggest that you start your search back <a href="index.php?page=search">here</a> at
-                        the catalog home page.&nbsp;&nbsp;You may also use the back key in your browser to try
-                        the intended action again.
-                    </p>
-                </div>
-            </div>
-            <div id="footer">&copy; Catalog Data Solutions. All Rights Reserved</div>
-    </div> <!-- doc -->
+    <h1>An error has occured with your request</h1>
+    <p style="font-size: 1.154em;">
+        We suggest that you start your search back <a href="index.php">here</a> at
+        the catalog home page.&nbsp;&nbsp;You may also use the back key in your browser to try
+        the intended action again.
+    </p>
 </body>
 </html>

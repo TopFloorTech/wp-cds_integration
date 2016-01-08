@@ -16,6 +16,7 @@
         }
     ],
     "require": {
-        "topfloor/cds_api": "dev-master"
+        "topfloor/cds_api": "dev-master",
+        "twig/twig": "1.6.5"
     }
 }

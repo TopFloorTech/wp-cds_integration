@@ -60,7 +60,7 @@ function cds_integration_settings_validate($input) {
 				continue;
 			}
 
-			$environments[$basePath] = $categoryId;
+			$environments[trim($basePath)] = trim($categoryId);
 		}
 	}
 

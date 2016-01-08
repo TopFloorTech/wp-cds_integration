@@ -6,17 +6,17 @@
  * Time: 1:35 PM
  */
 
-class CdsSearchSidebarWidget extends WP_Widget {
+class CdsSearchResultsWidget extends WP_Widget {
     /**
      * Sets up the Widgets name etc
      */
     public function __construct() {
         parent::__construct(
-            'cds_search_sidebar_widget',
-            __('CDS Search Sidebar', 'cds_integration'),
+            'cds_search_results_widget',
+            __('CDS Search Results', 'cds_integration'),
             array(
-                'description' => __('Shows the CDS faceted search sidebar', 'cds_integration'),
-                'classname' => 'CdsSearchSidebarWidget',
+                'description' => __('Shows available CDS search results', 'cds_integration'),
+                'classname' => 'CdsSearchResultsWidget',
             )
         );
     }
@@ -28,7 +28,7 @@ class CdsSearchSidebarWidget extends WP_Widget {
      * @param array $instance
      */
     public function widget( $args, $instance ) {
-        echo cds_integration_search_sidebar();
+        echo CdsIntegration::searchResultsWidget();
     }
 
     // Widget Backend
